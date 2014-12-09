@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body> 
+
+    
+
+    <select multiple="multiple">
+        <option id="1">Opt</option>
+        <option id="2">Opt</option>
+        <option id="3">Opt</option>
+        <option id="4">Opt</option>
+    </select>
+    <script type="text/javascript">
+        $('option').mousedown(function(e) {
+            e.preventDefault();
+            $(this).prop('selected', $(this).prop('selected') ? false : true);
+            return false;
+        });
+    </script>
+
+
+</body>
+</html>
